@@ -1,48 +1,63 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
-    <title>Exemplo 6</title>
-    <script type="text/javascript">
-        function cumprimento() {
-            document.write("<p>Olá Mundo!<\/p>");
-        }
-    </script>
-</head>
-
-<body>
-    <script type="text/javascript">
-        cumprimento();
-    </script>
-</body>
-
-</html>
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-    <title>Exemplo 7</title>
-    <style type="text/css">
-        p {
-            font-size: 12pt;
-            line-height: 12pt;
-            color: #ed8ccb
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão</title>
+    <style>
+        html, body {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        p:first-letter {
-            font-size: 200%;
+        .cartao{
+            width: 18rem;
+            border: 1px #c4bfbb solid;
+            margin: 0.5rem auto;
+            border-radius: 0.5rem;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         }
-
-        span {
-            text-transform: uppercase;
+        img{
+            width: 16rem; 
+            margin: 0.1rem 1rem;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 0.95rem;
+        }
+        button{
+            background-color: blue;
+            padding: 0.5rem;
+            color: white;
+            width: 6rem;
+            border: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            margin: 0.4rem 0.83rem;
+        }
+        h1{
+            margin: 0.5rem 0.84rem;
         }
     </style>
 </head>
-
 <body>
-    <p>Demonstração de estilo usando CSS.<br />
-        <span>Texto em caixa alta.</span>
-    </p>
-</body>
+    <div class="cartao">
+        <h1 class="titulo">Emilly</h1>
+        <div class="corpo">
+            <img src="imagem.avif" alt="" class="imagem">
 
+            <p>
+                Emilly gosta muito do campo e da natureza. 
+            </p>
+        </div>
+        <footer class="rodape">
+            <a href="curriculo.html">curriculo</a>
+            <button>ok</button>
+        </footer>
+    </div>
+</body>
 </html>
