@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas Culinárias</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .recipe {
+      margin: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .recipe img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Receitas Culinárias</h1>
+
+  <div class="recipe" onclick="redirectToRecipe('receita1.html')">
+    <h2>Receita 1</h2>
+    <img src="receita1.jpg" alt="Imagem da Receita 1">
+  </div>
+
+  <div class="recipe" onclick="redirectToRecipe('receita2.html')">
+    <h2>Receita 2</h2>
+    <img src="receita2.jpg" alt="Imagem da Receita 2">
+  </div>
+
+  <div class="recipe" onclick="redirectToRecipe('receita3.html')">
+    <h2>Receita 3</h2>
+    <img src="receita3.jpg" alt="Imagem da Receita 3">
+  </div>
+
+  <script>
+    function redirectToRecipe(url) {
+      window.location.href = url;
+    }
+  </script>
+
+</body>
+</html>
